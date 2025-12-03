@@ -1,0 +1,152 @@
+@import url("https://use.typekit.net/vcq4xep.css");
+
+.entrada {
+    padding: 10px;
+    font-family: "arpona", serif;
+    background-color: #cabfbd;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    font-family: "new-hero", sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+  font-family: "arpona", serif;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+#nosotros {
+    justify-content: space-between;
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.italica {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+        /* 2. El Contenedor Principal */
+        .linea-tiempo {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .linea-tiempo * {
+            box-sizing: border-box;
+        }
+
+        /* 3. La Línea Vertical (Ahora es un DIV real) */
+        .linea {
+            position: absolute;
+            width: 4px;
+            background-color: #5b4b49;
+            top: 0;
+            bottom: 0; /* Se estira de arriba a abajo */
+            left: 50%; /* Se ubica a la mitad */
+            margin-left: -2px; /* Se centra restando la mitad de su ancho */
+            z-index: 0; /* Se queda al fondo */
+        }
+
+        /* 4. Las Cajas de Contenido */
+        .cont-texto {
+            padding: 10px 30px 100px;
+            position: relative;
+            width: 50%;
+            z-index: 2; /* Texto por encima de la línea */
+        }
+
+        /* 5. Los Puntos (Ahora son SPAN reales) */
+        .circulo {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-color: #5b4b49;
+            border-radius: 50%; /* Hace que el cuadrado sea un círculo */
+            top: 15px; /* Altura respecto al título */
+        }
+
+        /* --- Ubicación de los puntos según el lado --- */
+
+        /* Si el item es izquierdo, el punto va a la derecha */
+        .izq .circulo {
+            right: -7px; /* Pegado al borde derecho y centrado en la línea */
+        }
+
+        /* Si el item es derecho, el punto va a la izquierda */
+        .derecha .circulo {
+            left: -7px; /* Pegado al borde izquierdo y centrado en la línea */
+        }
+
+        /* 6. Lógica de Posición de las Cajas */
+        .izq {
+            left: 0;
+            text-align: left;
+        }
+
+        .derecha {
+            left: 50%;
+            text-align: left;
+        }
+
+      
+/* Tablets */
+@media (max-width: 1024px) {
+.linea {
+                left: 20px;
+                margin-left: 0; 
+            }
+
+.cont-texto {
+                width: 100%;
+                padding-left: 50px; 
+                padding-right: 20px;
+            }
+
+.derecha {
+                left: 0%;
+            }
+
+.izq .circulo, 
+.derecha .circulo {
+                left: 15px; 
+                right: auto; 
+            }
+        }
+
+/* Móviles */
+@media (max-width: 768px) {
+.linea {
+                left: 20px;
+                margin-left: 0; 
+            }
+
+.cont-texto {
+                width: 100%;
+                padding-left: 50px; 
+                padding-right: 20px;
+            }
+
+.derecha {
+                left: 0%;
+            }
+
+.izq .circulo, 
+.derecha .circulo {
+                left: 15px; 
+                right: auto; 
+            }
+        }

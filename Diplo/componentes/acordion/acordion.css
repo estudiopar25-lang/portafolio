@@ -1,0 +1,55 @@
+    /* === COMPONENTE 3: ACCORDION === */
+    .accordion {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .accordion-item {
+        background: white;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-header {
+        background: #667eea;
+        color: white;
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.3s;
+    }
+
+    .accordion-header:hover {
+        background: #5568d3;
+    }
+
+    .accordion-header::after {
+        content: '+';
+        font-size: 24px;
+        transition: transform 0.3s;
+    }
+
+    .accordion-header.active::after {
+        transform: rotate(45deg);
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background: white;
+    }
+
+    .accordion-content.active {
+        max-height: 500px;
+    }
+
+    .accordion-body {
+        padding: 20px;
+        color: #666;
+        line-height: 1.6;
+    }

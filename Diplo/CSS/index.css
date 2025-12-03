@@ -1,0 +1,217 @@
+@import url("https://use.typekit.net/vcq4xep.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: block;
+  z-index: 10;
+}
+
+.intro {
+  font-family: "new-hero", sans-serif;
+  font-size: 22px;
+  color: #5b4b49;
+  margin: 45px 0;
+}
+
+.cont-banner {
+position: relative;
+}
+
+.banner {
+  width: 70%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f6f5ec;
+  font-family: "arpona", serif;
+  font-size: 72px;
+  z-index: 1;
+}
+
+main {
+  margin: 10px;
+}
+
+.contenedor-serv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-container:hover {
+  transform: translateY(-8px);
+}
+
+.card-container {
+  font-family: "arpona", serif;
+    width: 30%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Estilo para la pestaña (simula la solapa del archivador) */
+.tab {
+    font-size: 14px;
+    position: absolute;
+    top: -30px; /* Sube la pestaña por encima de la tarjeta */
+    background-color: #cabfbd;
+    color: #f6f5ec;
+    text-align: right;
+    padding: 8px 15px;
+    height: 30px;
+    width: 40%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    z-index: 10; /* Asegura que la pestaña esté sobre la tarjeta */
+}
+
+/* Contenido Principal de la Tarjeta */
+.card-content {
+    background-color: #cabfbd;
+    padding: 25px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative; /* Asegura que la tarjeta esté detrás de la pestaña */
+    z-index: 5;
+    min-height: 180px;
+}
+
+.card-content h1 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #5b4b49;
+}
+
+.card-content p {
+  font-family: "new-hero", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+    color: #f6f5ec;
+}
+
+.home {
+  font-family: "new-hero", sans-serif;
+  font-size: 30px;
+  color: #5b4b49;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home h4 {
+  width: 60%;
+  text-align: center;
+}
+
+.italica {
+  font-style: italic;
+}
+
+.cont-gancho {
+  margin: 30px 0px;
+}
+
+.gancho {
+  font-family: "new-hero", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  background-color: #acc4ac;
+  color: #f6f5ec;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.gancho:hover {
+  background-color: #5b4b49;
+  color: #f6f5ec;
+}
+
+
+.enlaces2 {
+  font-family: "new-hero", sans-serif;
+  text-decoration: none;
+  color: #5b4b49;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .banner {
+  width: 80%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f6f5ec;
+  font-family: "arpona", serif;
+  font-size: 40px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.card-container {
+    width: 45%;
+    
+}
+
+.card-content {
+    min-height: 180px;
+    padding: 18px;
+}
+
+}
+
+
+/* Móviles */
+@media (max-width: 768px) {
+
+  .home {
+  font-size: 24px;
+}
+
+.home h4 {
+  width: 65%;
+}
+
+.gancho{
+font-size: 20px;
+}
+
+  .imagen {
+  object-fit: cover;
+  height: 300px;
+  margin: 0;
+  display: block;
+}
+
+.card-container {
+    width: 90%;
+}
+
+.card-content {
+    min-height: 180px;
+}
+
+}

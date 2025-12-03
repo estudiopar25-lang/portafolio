@@ -1,0 +1,52 @@
+@import url("https://use.typekit.net/vcq4xep.css");
+
+
+.serv {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 12px 0px;
+    margin: 20px 50px;
+    gap: 10px;
+}
+
+.serv p {
+    text-align: justify;
+    font-family: "new-hero", sans-serif;
+    font-size: 16px;
+}
+
+.serv h4 {
+    padding: 10px;
+    font-family: "arpona", serif;
+    background-color: #cabfbd;
+}
+
+.subtitulo {
+  font-family: "new-hero", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .serv {
+    padding: 12px 0px;
+    margin: 20px 10px;
+    gap: 10px;
+}
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .serv {
+    grid-template-columns: 1fr;
+  }
+}

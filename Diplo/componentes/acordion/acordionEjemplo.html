@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acordion</title>
+    <link rel="stylesheet" href="acordion.css">
+    <script src="acordion.js"></script>
+
+    <!--*************** COPIAR RUTA ***************-->
+    <!-- Configurar ruta en caso de que corresponda -->
+    <link rel="stylesheet" href="/componentes/acordion/acordion.css">
+    <script src="/componentes/acordion/acordion.js"></script>
+    <!--*************** COPIAR RUTA ***************-->
+</head>
+
+<body>
+    <!--*************** COPIAR DESDE ACA ***************-->
+    <!-- COMPONENTE 3: ACCORDION -->
+    <div class="component">
+        <div class="accordion">
+            <!-- MODIFICAR AQUÍ: Cambia las preguntas y respuestas -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    ¿Qué es HTML?
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Define la
+                        estructura y el contenido de una página mediante el uso de elementos y etiquetas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    ¿Para qué sirve CSS?
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        CSS (Cascading Style Sheets) es un lenguaje de diseño que controla la presentación visual de las
+                        páginas web. Permite cambiar colores, fuentes, espaciados y crear diseños complejos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    ¿Qué hace JavaScript?
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        JavaScript es un lenguaje de programación que añade interactividad a las páginas web. Permite
+                        crear funcionalidades dinámicas como validación de formularios, animaciones y aplicaciones web
+                        completas.
+                    </div>
+                </div>
+            </div>
+            <!-- FIN MODIFICAR -->
+        </div>
+    </div>
+    <!--*************** HASTA ACA ***************-->
+</body>
+
+</html>
