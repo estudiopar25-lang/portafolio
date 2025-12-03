@@ -192,7 +192,11 @@ main {
 }
 
 .home h4 {
-  width: 65%;
+  width: 70%;
+}
+
+main {
+  margin: 4px;
 }
 
 .gancho{
