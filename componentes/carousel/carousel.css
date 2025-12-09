@@ -166,7 +166,7 @@
  @media (max-width: 768px) {
     
      .carousel {
-         height: 250px;
+         height: 200px;
      }
 
 
@@ -175,10 +175,10 @@
      }
 
      .carousel-btn {
-         width: 50px;
-         height: 50px;
-         font-size: 22px;
-         padding: 14px 18px;
+         width: 30px;
+         height: 30px;
+         font-size: 14px;
+         padding: 10px 14px;
      }
 
      .carousel-btn.prev {
@@ -190,11 +190,11 @@
      }
 
      .indicator {
-         width: 10px;
-         height: 10px;
+         width: 5px;
+         height: 5px;
      }
 
      .indicator.active {
-         width: 30px;
+         width: 20px;
      }
  }

@@ -134,10 +134,11 @@ main {
 
 #menu-principal {
   padding: 10px 5px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 nav a {
-  padding: 10px;
+  padding: 8px;
 }
+
 }

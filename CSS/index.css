@@ -188,11 +188,11 @@ main {
 @media (max-width: 768px) {
 
   .home {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .home h4 {
-  width: 70%;
+  width: 80%;
 }
 
 main {
@@ -203,7 +203,7 @@ main {
 font-size: 20px;
 }
 
-  .imagen {
+.imagen {
   object-fit: cover;
   height: 300px;
   margin: 0;

@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/vcq4xep.css");
+
 .texto {
 font-family: "new-hero", sans-serif;
 font-size: 16px;
@@ -18,6 +19,11 @@ margin: 15px 0px;
     padding: 12px;
     text-align: center;
     background-color: #cabfbd;
+}
+
+.tarjetas p {
+    font-family: "new-hero", sans-serif;
+    font-size: 14px;
 }
 
 .tarjetas img {
@@ -56,6 +62,12 @@ margin: 15px 0px;
   .contenedor-tarjetas {
     grid-template-columns: 1fr 1fr;
   }
+
+ .tarjetas {
+  padding: 8px;
+ }
+
+
   .contenedor-tarjetas2 {
   grid-template-columns: 1fr;
 }
